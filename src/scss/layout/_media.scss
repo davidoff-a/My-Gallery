@@ -1,0 +1,29 @@
+@include tablet {
+  .container {
+    padding: 0 10px;
+  }
+  .header {
+    &__img {
+      width: 102px;
+      height: 102px;
+      margin-bottom: 11px;
+    }
+    &__subtitle {
+      margin-top: 4px;
+    }
+  }
+  .wrapper {
+    width: 360px;
+    &__item {
+      width: 78px;
+      height: 42px;
+    }
+  }
+  .gallery {
+    gap: 12px;
+    margin-top: 20px;
+  }
+  .footer {
+    margin-top: 44px;
+  }
+}
