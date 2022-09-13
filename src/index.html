@@ -7,6 +7,17 @@
       content="width=device-width, initial-scale=1,
   maximum-scale=5"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
 
     <link rel="icon" href="devchallenges.png" />
 
@@ -16,48 +27,111 @@
       href="https://devchallenges.io/"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-
     <title>Devchallenges</title>
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <img
-          src="./assets/profilePhoto.png"
-          alt="profilePhoto"
-          class="header__img"
-        />
-        <h2 class="header__title">Rodney Cotton</h2>
-        <div class="header__subtitle">Helsinki, Finland</div>
-        <ul class="wrapper">
-          <li class="wrapper__item">
-            <div class="number">100</div>
-            <div class="descr">Posts</div>
-          </li>
-          <li class="wrapper__item">
-            <div class="number">2,242</div>
-            <div class="descr">Follower</div>
-          </li>
-          <li class="wrapper__item">
-            <div class="number">1,432</div>
-            <div class="descr">Following</div>
-          </li>
-        </ul>
-      </header>
-      <main class="gallery">
-        <img src="./assets/photo1.png" alt="photo1" class="gallery__img" />
-        <img src="./assets/photo2.png" alt="photo2" class="gallery__img" />
-        <img src="./assets/photo3.png" alt="photo3" class="gallery__img" />
-        <img src="./assets/photo4.png" alt="photo4" class="gallery__img" />
-        <img src="./assets/photo5.png" alt="photo5" class="gallery__img" />
-        <img src="./assets/photo6.png" alt="photo6" class="gallery__img" />
+      <header class="header">Checkout</header>
+      <main class="main">
+        <form action="#" class="form">
+          <fieldset>
+            <legend class="subtitle">Contact Information</legend>
+            <label for="email" class="form__label">E-mail</label>
+            <input
+              type="text"
+              placeholder="Enter your email ..."
+              id="email"
+              class="form__input form__input_email"
+            />
+            <label for="phone" class="form__label">Phone</label>
+            <input
+              type="text"
+              placeholder="Enter your phone number ..."
+              id="phone"
+              class="form__input form__input_number"
+            />
+          </fieldset>
+          <fieldset>
+            <legend class="subtitle">Shipping address</legend>
+            <label for="fullname" class="form__label">Full Name</label>
+            <input
+              type="text"
+              placeholder="Enter your Full Name ..."
+              id="fullname"
+              class="form__input form__input_name"
+            />
+            <label for="address" class="form__label">Address</label>
+            <input
+              type="text"
+              placeholder="Your address ..."
+              id="address"
+              class="form__input form__input_address"
+            />
+            <label for="city" class="form__label">City</label>
+            <input
+              type="text"
+              placeholder="Your city ..."
+              id="city"
+              class="form__input form__input_city"
+            />
+            <label for="country" class="form__label">Country</label>
+            <input
+              type="text"
+              placeholder="Your country ..."
+              id="country"
+              class="form__input form__input_country"
+            />
+            <label for="postalcode" class="form__label">Postal Code</label>
+            <input
+              type="text"
+              placeholder="Your Postal Code ..."
+              id="postalcode"
+              class="form__input form__input_postal"
+            />
+          </fieldset>
+        </form>
+        <div class="shopping_cart">
+          <div class="goods">
+            <div class="good-line">
+              <img src="./assets/photo1.png" alt="photo1" class="goods__img" />
+              <div class="goods__info">
+                <div class="goods__name">Vintage Backbag</div>
+                <div class="goods__price">
+                  <span class="new-price">$54.99</span
+                  ><span class="old-price">$94.99</span>
+                </div>
+                <input type="text" class="goods__quantity" value="1" />
+              </div>
+            </div>
+            <div class="goods">
+              <div class="good-line">
+                <img
+                  src="./assets/photo2.png"
+                  alt="photo1"
+                  class="goods__img"
+                />
+                <div class="goods__info">
+                  <div class="goods__name">Levi Shoes</div>
+                  <div class="goods__price">
+                    <span class="new-price">$74.99</span
+                    ><span class="old-price">$124.99</span>
+                  </div>
+                  <input type="text" class="goods__quantity" value="1" />
+                </div>
+              </div>
+            </div>
+            <ul class="numbers">
+              <li class="cost">
+                <div class="cost__name">Shipping</div>
+                <div class="cost__sum">$19</div>
+              </li>
+              <li class="cost">
+                <div class="cost__name">Total</div>
+                <div class="cost__sum">$148.98</div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </main>
       <footer class="footer">created by davidoff-a - devChallenges.io</footer>
     </div>

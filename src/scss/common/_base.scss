@@ -6,5 +6,19 @@
   margin: 0 auto;
   padding: 0 20px;
   min-width: 320px;
-  max-width: 996px;
+  max-width: 1000px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form {
+  width: 45%;
+}
+
+.shopping_cart {
+  width: 35%;
 }

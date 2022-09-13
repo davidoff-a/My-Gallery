@@ -1,0 +1,53 @@
+.subtitle {
+  @include text($color: $subtitle-color, $size: 18px);
+  margin-bottom: 15px;
+}
+
+.form {
+  &__label {
+    @include text($color: $label-color, $size: 12px);
+  }
+  &__input {
+    @extend %inputs;
+    padding-left: 52px;
+    margin: 7px 0 20px;
+    position: relative;
+    &::before &_email {
+      width: 20px;
+      height: 20px;
+      background-image: url("../assets/icons/mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &::before {
+      content: "";
+      color: $font-color;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      bottom: 0;
+      left: 52px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &::placeholder {
+      @include text;
+    }
+  }
+}
+.shopping_cart {
+  width: 383px;
+  height: 535px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: $bg-color;
+}
+
+.goods{
+  &__img{
+    width: 136px;
+    height: 136px;
+    border-radius: 12px;
+  }
+}

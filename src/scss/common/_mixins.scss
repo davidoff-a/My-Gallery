@@ -4,3 +4,8 @@
   }
 }
 
+@mixin text($color: $font-color, $size: 16px) {
+  @extend %text;
+  color: $color;
+  font-size: $size;
+}
